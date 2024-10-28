@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Navbar from "./Navbar";
 import LandingPage from "./LandingPage";
 import OurServices from "./Services";
