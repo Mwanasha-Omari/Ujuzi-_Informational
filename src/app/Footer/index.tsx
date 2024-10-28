@@ -2,6 +2,8 @@
 import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
+import Image from 'next/image';
+
 
 const FooterContent = () => {
   return (
@@ -11,8 +13,7 @@ const FooterContent = () => {
   Join us in<br />
   making<span className="text-primary-amber"> CBC <br />more easier</span>
 </h1>
-<img src="/Images/SISU teachers image.jpg"className="w-full h-auto lg:w-96 lg:h-80 mt-3.5 lg:mt-0 object-cover rounded-lg mb-24" alt="CBC teacher"
-/>
+<Image src="/Images/SISU teachers image.jpg"className="w-full h-auto lg:w-96 lg:h-80 mt-3.5 lg:mt-0 object-cover rounded-lg mb-24" alt="CBC teacher" />
 </div> 
     <footer className="bg-primary-blue text-white py-8 md:py-12 font-poppins">
       <div className="container mx-auto px-4">
