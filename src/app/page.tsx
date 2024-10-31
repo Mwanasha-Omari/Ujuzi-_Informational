@@ -7,10 +7,9 @@ import FooterContent from "./Footer";
 
 export default function Home() {
   return (
-    <main > 
+  <main > 
       <Navbar/>   
       <LandingPage/>
-      <br/>
       <OurServices/>
       <Team/>
       <FooterContent/>
