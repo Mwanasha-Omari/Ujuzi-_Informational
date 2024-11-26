@@ -3,13 +3,11 @@ import { ChartBarIcon } from '@heroicons/react/24/solid';
 import { SiCanvas } from 'react-icons/si';
 import { FaChartPie } from 'react-icons/fa';
 import { MdPhonelink } from 'react-icons/md';
-
 interface ServiceCardProps {
   title: string;
   description: string;
   Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
 }
-
 const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, Icon }) => (
   <div className="bg-white p-6 rounded-lg border-2 border-primary-amber w-full h-full">
     <div className="flex items-center justify-center mb-6">
@@ -24,7 +22,6 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, Icon }) =
     </div>
   </div>
 );
-
 const OurServices: React.FC = () => {
   const services = [
     {
@@ -48,11 +45,10 @@ const OurServices: React.FC = () => {
       icon: MdPhonelink
     },
   ];
-
   return (
     <div className="bg-gray-100 py-16 mt-72" id="services">
       <div className="container mx-auto px-4">
-        <h3 className="text-6xl font-bold text-center mb-20 text-black font-sans">
+        <h3 className="font-bold text-black text-center mb-40 text-4xl lg:text-5xl mt-20">
           Our Services
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-6xl mx-auto">
@@ -69,5 +65,4 @@ const OurServices: React.FC = () => {
     </div>
   );
 };
-
 export default OurServices;
